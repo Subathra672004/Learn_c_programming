@@ -1,0 +1,88 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <style>
+            * {
+    box-sizing: border-box;
+  
+    }
+body{
+    margin-left:400px;
+    margin-top:100px;
+    width:20%;
+    }
+    form
+    {
+        margin:2px;
+        padding:10px;
+    }
+input[type=text]
+{
+  border-radius: 25px;
+  padding:5px;
+}
+select, textarea {
+  width: 25%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+  border-radius: 10px;
+}
+        </style>
+    </head>
+    <body background="contactimg.png" style="background-repeat: no-repeat; background-size: cover;">
+        <script>
+            function validate()
+            {  
+              var x=document.forms.myform.firstname.value;
+              var y=document.forms.myform.lastname.value;
+              var z=document.forms.myform.subject.value;
+              if(x=='')
+              {
+                alert("Enter your firstname")
+                return false
+              }
+              else if(y=='')
+              {
+                alert("Enter your Lastname")
+                return false
+              }
+              else if(z=='')
+              {
+                alert("Fillout subject field");
+                return false
+              }
+              else
+              {
+              alert("Form submitted successfully");
+              return true
+              }
+            }
+        </script>
+        <div class="container">
+            
+            <div class="row">
+              
+              <div class="column">
+                <form onsubmit="return validate();" method="post" name="myform">
+                  <label for="fname">First Name</label>
+                  <input type="text" id="fname" name="firstname" placeholder="Your name.." ><br><br>
+                  <label for="lname">Last Name</label>
+                  <input type="text" id="lname" name="lastname" placeholder="Your last name.." ><br><br>
+                  <label for="country">Country</label>
+                  <select id="country" name="country" >
+                    <option value="australia">India</option>
+                    <option value="canada">Others</option>
+                    
+                  </select><br>
+                  <label for="subject">Subject</label><br>
+                  <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px" ></textarea><br>
+                  <input type="Submit"  class="btn-info">
+                </form>
+              </div>
+            </div>
+          </div>
+    </body>
+</html>

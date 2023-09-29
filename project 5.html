@@ -1,0 +1,137 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <style>
+            body
+                {
+                    margin:50px;
+                    padding:10px;
+                }
+                h3{
+                    color:blue;
+                }
+            </style>
+    </head>
+    <body>
+        <h1 style="color:brown; text-align:center;">Assignment 4</h1>
+        <h4 style="color:rgb(13, 216, 13); text-align:right">Each question carries 1 point</h4>
+        <script>
+            function validate()
+            {
+                var q1=document.forms.myform.que1.value;
+                var q2=document.forms.myform.que2.value;
+                var q3=document.forms.myform.que3.value;
+                var q4=document.forms.myform.que4.value;
+                var q5=document.forms.myform.que5.value;
+                var q6=document.forms.myform.que6.value;
+                var q7=document.forms.myform.que7.value;
+                var q8=document.forms.myform.que8.value;
+                var q9=document.forms.myform.que9.value;
+                var q10=document.forms.myform.que10.value;
+                var sum=0
+                if(q1==3)
+                    sum+=1;
+                if(q2==3)
+                    sum+=1;
+                if(q3==3)
+                    sum+=1;
+                if(q4==4)
+                    sum+=1;
+                if(q5==4)
+                    sum+=1;
+                if(q6==1)
+                    sum+=1;
+                if(q7==2)
+                    sum+=1;
+                if(q8==2)
+                    sum+=1;
+                if(q9==3)
+                    sum+=1;
+                if(q10==2)
+                    sum+=1;
+                    if(sum<7)
+                {
+                    alert("You scored "+sum+"/10");
+                    alert("Retake your assignment");
+                    return false;
+                }   
+                else{
+                    alert("You scored "+sum+"/10");
+                    alert("Thanks for taking assignment 2");
+                }
+            }
+        </script>
+        <form name="myform" onsubmit="return validate();" action="project video page1.html" method="post">
+        <h3>Question 1</h3>
+        What is the purpose of the "if-else" statement in C?<br><br>
+        <input type="radio" name="que1" value="1"> To execute a block of code repeatedly.<br>
+        <input type="radio" name="que1" value="2"> To declare variables and constants.<br>
+        <input type="radio" name="que1" value="3"> To test a condition and execute different code based on the result.<br>
+        <input type="radio" name="que1" value="4"> To perform mathematical calculations.<br><br>
+        
+        <h3>Question 2</h3>
+        What is the correct syntax for an "if-else" statement in C?<br><br>
+        <input type="radio" name="que2" value="1"> if condition { statement1; statement2; } else { statement3; }<br>
+        <input type="radio" name="que2" value="2">  if condition then { statement1; } else { statement2; }<br>
+        <input type="radio" name="que2" value="3"> if (condition) { statement1; } else { statement2; }<br>
+        <input type="radio" name="que2" value="4">  if condition then statement1; else statement2;<br>
+
+        <h3>Question 3</h3>
+        Which of the following is true about nested "if-else" statements?<br><br>
+        <input type="radio" name="que3" value="1"> They are not allowed in C.<br>
+        <input type="radio" name="que3" value="2"> The "else" part is mandatory for every "if" statement.<br>
+        <input type="radio" name="que3" value="3"> They allow you to test multiple conditions and execute different blocks of code based on the results.<br>
+        <input type="radio" name="que3" value="4"> Nested "if-else" statements are only allowed up to two levels deep.<br>
+
+        <h3>Question 4</h3>
+        What happens if there is no "else" part in an "if-else" statement?<br><br>
+        <input type="radio" name="que4" value="1">  The program will not compile.<br>
+        <input type="radio" name="que4" value="2"> The program will crash at runtime.<br>
+        <input type="radio" name="que4" value="3"> If the condition is true, nothing happens; if the condition is false, the program crashes.<br>
+        <input type="radio" name="que4" value="4"> If the condition is true, the program executes the code inside the "if" block; if the condition is false, nothing happens.<br>
+
+        <h3>Question 5</h3>
+        Which of the following operators can be used to combine multiple conditions in an "if" statement?<br><br>
+        <input type="radio" name="que5" value="1"> && (logical AND)<br>
+        <input type="radio" name="que5" value="2">  || (logical OR)<br>
+        <input type="radio" name="que5" value="3"> ! (logical NOT)<br>
+        <input type="radio" name="que5" value="4">  All of the above<br>
+
+        <h3>Question 6</h3>
+        <img src="p8.PNG"><br><br>
+        <input type="radio" name="que6" value="1"> 2<br>
+        <input type="radio" name="que6" value="2"> 3<br>
+        <input type="radio" name="que6" value="3"> 4<br>
+        <input type="radio" name="que6" value="4"> Compilation error<br>
+
+        <h3>Question 7</h3>
+        If multiple conditions are used in a single "if" statement then the testing of those conditions are done<br><br>
+        <input type="radio" name="que7" value="1"> From Right to Left<br>
+        <input type="radio" name="que7" value="2">  From Left to right<br>
+        <input type="radio" name="que7" value="3"> Randomly<br>
+        <input type="radio" name="que7" value="4"> None of the above<br>
+
+        <h3>Question 8</h3>
+        <img src="p9.PNG"><br><br>
+        <input type="radio" name="que8" value="1"> Sum of the digits of a number<br>
+        <input type="radio" name="que8" value="2"> The negative sum of the digits of a number<br>
+        <input type="radio" name="que8" value="3"> The reverse of a number<br>
+        <input type="radio" name="que8" value="4"> The same number is printed<br>
+
+        <h3>Question 9</h3>
+        <img src="p10.PNG"><br><br>
+        <input type="radio" name="que9" value="1">  a=5, b=6, c=2;<br>
+        <input type="radio" name="que9" value="2"> a=6, b=7, c=1;<br>
+        <input type="radio" name="que9" value="3"> a=6, b=6,c=2;<br>
+        <input type="radio" name="que9" value="4"> a=5, b=7, c=1;<br>
+
+        <h3>Question 10</h3>
+        <img src="p11.PNG"><br><br>
+        <input type="radio" name="que10" value="1"> Choice is 1<br>
+        <input type="radio" name="que10" value="2"> Choice other than 1<br>
+        <input type="radio" name="que10" value="3"> Both (a) and (b)<br>
+        <input type="radio" name="que10" value="4"> Syntax error<br><br>
+        <input type="submit" class="btn-info" onclick="validate()">
+        </form>
+    </body>
+</html>

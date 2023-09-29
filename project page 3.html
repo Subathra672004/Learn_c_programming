@@ -1,0 +1,168 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <style>
+            body
+                {
+                    margin:50px;
+                    padding:10px;
+                }
+                h3{
+                    color:blue;
+                }
+            </style>
+    </head>
+    <body>
+        <h1 style="color:brown; text-align:center;">Assignment 2</h1>
+        <h4 style="color:rgb(13, 216, 13); text-align:right">Each question carries 1 point</h4>
+        <script>
+            function validate()
+            {
+                var q1=document.forms.myform.que1.value;
+                var q2=document.forms.myform.que2.value;
+                var q3=document.forms.myform.que3.value;
+                var q4=document.forms.myform.que4.value;
+                var q5=document.forms.myform.que5.value;
+                var q6=document.forms.myform.que6.value;
+                var q7=document.forms.myform.que7.value;
+                var q8=document.forms.myform.que8.value;
+                var q9=document.forms.myform.que9.value;
+                var q10=document.forms.myform.que10.value;
+                var sum=0
+                if(q1==3)
+                    sum+=1;
+                if(q2==4)
+                    sum+=1;
+                if(q3==1)
+                    sum+=1;
+                if(q4==1)
+                    sum+=1;
+                if(q5==4)
+                    sum+=1;
+                if(q6==4)
+                    sum+=1;
+                if(q7==4)
+                    sum+=1;
+                if(q8==3)
+                    sum+=1;
+                if(q9==2)
+                    sum+=1;
+                if(q10==18)
+                    sum+=1;
+                    if(sum<7)
+                {
+                    alert("You scored "+sum+"/10");
+                    alert("Retake your assignment");
+                    return false;
+                }   
+                else{
+                    alert("You scored "+sum+"/10");
+                    alert("Thanks for taking assignment 2");
+                }
+            }
+        </script>
+        <form name="myform" onsubmit="return validate();" action="project video page1.html" method="post">
+            <h3>Question 1</h3>
+            Which of the following is not a C variable?<br><br>
+            <input type="radio" name="que1" value="1"> Count123<br>
+            <input type="radio" name="que1" value="2"> Count_123<br>
+            <input type="radio" name="que1" value="3"> Count@123<br>
+            <input type="radio" name="que1" value="4"> X_123_Count<br><br>
+
+            <h3>Question 2</h3>
+            A function<br><br>
+            <input type="radio" name="que2" value="1"> is a block of statements to perform some specific task<br>
+            <input type="radio" name="que2" value="2"> s a fundamental modular unit to perform some task<br>
+            <input type="radio" name="que2" value="3">  has a name and can be used multiple times<br>
+            <input type="radio" name="que2" value="4"> All the above options are true<br><br>
+
+            <h3>Question 3</h3>
+            The execution of any C program is<br><br>
+            <input type="radio" name="que3" value="1">  Sequential<br>
+            <input type="radio" name="que3" value="2"> Parallel<br>
+            <input type="radio" name="que3" value="3"> Multi-threading<br>
+            <input type="radio" name="que3" value="4"> None of these<br><br>
+
+            <h3>Question 4</h3>
+            Syntax error occurs when<br><br>
+            <input type="radio" name="que4" value="1"> The rules of grammar of the programming language is violated<br>
+            <input type="radio" name="que4" value="2"> The statements in the program have no meaning<br>
+            <input type="radio" name="que4" value="3">  The program gives wrong or undesired output<br>
+            <input type="radio" name="que4" value="4">  Some illegal operation (e.g. divide by zero) is performed<br><br>
+
+
+            <h3>Question 5</h3>
+            If integer needs two bytes of storage, then the minimum value of a signed integer in C would be<br><br>
+            <input type="radio" name="que5" value="1">  -65535<br>
+            <input type="radio" name="que5" value="2"> 0<br>
+            <input type="radio" name="que5" value="3"> -32,767<br>
+            <input type="radio" name="que5" value="4"> -32,768<br><br>
+
+
+            <h3>Question 6</h3>
+            What will be the output of the following code?<br><br>
+            int main()<br>
+            {<br>
+                a=9;<br>
+                printf("%d",a);<br>
+                return 0;<br>
+            }<br><br>
+            <input type="radio" name="que6" value="1"> 9<br>
+            <input type="radio" name="que6" value="2"> 0<br>
+            <input type="radio" name="que6" value="3"> 1001<br>
+            <input type="radio" name="que6" value="4"> Compilation error<br><br>
+
+            <h3>Question 7</h3>
+            What is the output?<br><br>
+            #define fun(x) (x*x)<br>
+            int main()<br>
+            {<br>
+                float i;<br>
+                i=64.0/fun(2)<br>
+                printf("%.2f",i);<br>
+                return 0;<br>
+            }<br>
+            <input type="radio" name="que7" value="1"> 8.00<br>
+            <input type="radio" name="que7" value="2"> 4.00<br>
+            <input type="radio" name="que7" value="3"> 0.00<br>
+            <input type="radio" name="que7" value="4"> 16.00<br><br>
+
+
+            <h3>Question 8</h3>
+            Swap without using third variable<br><br>
+            <input type="radio" name="que8" value="1"> a=a-b; b=a-b; a=a+b;<br>
+            <input type="radio" name="que8" value="2"> a=a%b; b=a+b; a=a/b;<br>
+            <input type="radio" name="que8" value="3"> a=a+b; b=a-b; a=a-b;<br>
+            <input type="radio" name="que8" value="4"> None of the above<br><br>
+
+
+            <h3>Question 9</h3>
+            What will be the output?<br><br>
+            int main ()<br>
+            {<br>
+                int x=1,y=3;<br>
+                int t=x;<br>
+                x=y;<br>
+                y=t;<br>
+                printf("%d %d",x,y);<br>
+                return 0;<br>
+            }<br>
+            <input type="radio" name="que9" value="1"> 1 3<br>
+            <input type="radio" name="que9" value="2"> 3 1<br>
+            <input type="radio" name="que9" value="3"> 1 1<br>
+            <input type="radio" name="que9" value="4"> 3 3<br><br>
+
+            <h3>Question 10</h3>
+            When executed the following code will print .......<br><br>
+            int main()<br>
+            {<br>
+                int sum3+6/2+6*2;<br>
+                printf("%d",sum);<br>
+                return 0;<br>
+            }<br>
+            <input type="text" name="que10">
+            <br><br>
+            <input type="submit" class="btn-info" >
+        </form>
+    </body>
+</html>

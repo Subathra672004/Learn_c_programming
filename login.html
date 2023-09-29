@@ -1,0 +1,92 @@
+<html>
+    <head>
+        <style>
+            form{
+                background-color: transparent;
+                border: 2px solid rgba(255, 255, 255, 0.5);
+                border-radius: 20px;
+                backdrop-filter: blur(10px);
+                padding: 2rem 3rem;
+                border:none;
+                outline:none;
+            }
+            button
+            {
+                width:100%;
+                padding:5px;
+                border-radius: 40px;
+                background-color: rgb(255, 255,255, 1);
+                border: none;
+                outline: none;
+                font-size: 1rem;
+                font-weight: 600;
+            }
+            button:hover {
+            background-color: rgb(255, 255,255, 0.5);
+            }
+            body{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            h1{
+                font-size: 2rem;
+                color: #fff;
+                text-align: center;
+            }
+            p{
+                color:white;
+            }
+            a{
+                text-decoration: none;
+                color:crimson;
+            }
+            a:hover{
+                text-decoration: underline;
+            }
+            input{
+                background: transparent;
+                border:none;
+                outline:none;
+                border-bottom: 2px solid #fff;
+                color:aliceblue;
+            }
+        </style>
+    </head>
+    <body background="loginimg.png" style="background-repeat: no-repeat; background-size: cover;">
+        <script>
+            function validate()
+            {
+            var x=document.forms.myform.mail.value;
+            var y=document.forms.myform.password.value;
+            mail=x.split('@')
+            if(mail[0].length<8)
+            {
+                alert("Atleast 8 characters are required for email");
+                return false
+            }
+            else if(y.length<8)
+            {
+                alert("Password requires atleast 8 characters")
+                return false
+            }
+            else{
+                return true;
+            }
+        </script>
+        <form name="myform" onsubmit="return validate();" action="project video page1.html">
+            <h1>Login</h1>
+            
+            <p>Email:</p>
+            <input type="email" name="mail" required><br><br>
+
+            <p>Password:</p>
+            <input type="password" name="password" required><br><br><br>
+            <p><input type="checkbox">Remember Me</p><br>
+            
+            <button type="submit">Log in</button>
+        
+            <p>Don't have an account <a href="signup.html">Sign up</a></p>
+        </form>
+    </body>
+</html>

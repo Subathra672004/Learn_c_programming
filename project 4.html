@@ -1,0 +1,152 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <style>
+            body
+                {
+                    margin:50px;
+                    padding:10px;
+                }
+                h1{
+                    color:blue;
+                }
+            </style>
+    </head>
+    <body>
+        <h1 style="color:brown; text-align:center;">Assignment 3</h1>
+        <h4 style="color:rgb(13, 216, 13); text-align:right">Each question carries 1 point</h4>
+        <script>
+            function validate()
+            {
+                var q1=document.forms.myform.que1.value;
+                var q2=document.forms.myform.que2.value;
+                var q3=document.forms.myform.que3.value;
+                var q4=document.forms.myform.que4.value;
+                var q5=document.forms.myform.que5.value;
+                var q6=document.forms.myform.que6.value;
+                var q7=document.forms.myform.que7.value;
+                var q8=document.forms.myform.que8.value;
+                var q9=document.forms.myform.que9.value;
+                var q10=document.forms.myform.que10.value;
+                var sum=0
+                if(q1==1)
+                    sum+=1;
+                if(q2==1)
+                    sum+=1;
+                if(q3==2)
+                    sum+=1;
+                if(q4==1)
+                    sum+=1;
+                if(q5==1)
+                    sum+=1;
+                if(q6==2)
+                    sum+=1;
+                if(q7==2)
+                    sum+=1;
+                if(q8==2)
+                    sum+=1;
+                if(q9==2)
+                    sum+=1;
+                if(q10==2)
+                    sum+=1;
+                    if(sum<7)
+                {
+                    alert("You scored "+sum+"/10");
+                    alert("Retake your assignment");
+                    return false;
+                }   
+                else{
+                    alert("You scored "+sum+"/10");
+                    alert("Thanks for taking assignment 2");
+                }
+
+            }
+        </script>
+        <form name="myform" onsubmit="return validate();" action="project video page1.html" method="post">
+        <h3>Question 1</h3>
+        Which of the following statement is correct?<br><br>
+        <input type="radio" name="que1" value="1"> Operator precedence determines which operator is performed first in an expression with more than one operator with different precedence. Associativity is used when two operators of same precedence appear in an expression<br>
+        <input type="radio" name="que1" value="2"> Operator associativity determines which operator is performed first in an expression with more than one operator with different associativity. Precedence is used when two operators of same precedence appear in an expression<br>
+        <input type="radio" name="que1" value="3"> Operator precedence and associativity are same.<br>
+        <input type="radio" name="que1" value="4"> None of the above<br><br>
+        
+        <h3>Question 2</h3>
+        Find the output<br>
+        int main()<br>
+        {<br> 
+            int a=50, b20, c=6,d=3, result;<br>
+            result=a+a*-b/c%d+c*d;<br>
+            printf("%d",result); <br>
+            return 0;
+        }<br><br>
+        <input type="radio" name="que2" value="1"> 67<br>
+        <input type="radio" name="que2" value="2"> -36<br>
+        <input type="radio" name="que2" value="3"> 66<br>
+        <input type="radio" name="que2" value="4">  -37<br>
+
+        <h3>Question 3</h3>
+        What is the output of the following code?<br>
+        int main()<br>
+        {<br>
+            int h=8;<br>
+            int b=4*6+3*4 &lt h*5?4*3;<br>
+            printf("%d",b)<br>
+            return 0;<br>
+        }
+        <input type="radio" name="que3" value="1"> 0<br>
+        <input type="radio" name="que3" value="2"> 3<br>
+        <input type="radio" name="que3" value="3"> 4<br>
+        <input type="radio" name="que3" value="4"> Compilation error<br>
+
+        <h3>Question 4</h3>
+        <img src="p1.PNG"><br><br>
+        <input type="radio" name="que4" value="1"> IITKGP<br>
+        <input type="radio" name="que4" value="2"> IITD and IITM<br>
+        <input type="radio" name="que4" value="3">  IITKGP and IITM<br>
+        <input type="radio" name="que4" value="4"> IITM<br>
+
+        <h3>Question 5</h3>
+        <img src="p2.PNG"><br><br>
+        <input type="radio" name="que5" value="1">  Condition is true<br>
+        <input type="radio" name="que5" value="2">  Condition false<br>
+        <input type="radio" name="que5" value="3"> Error<br>
+        <input type="radio" name="que5" value="4">  No output possible<br>
+
+        <h3>Question 6</h3>
+        <img src="p3.PNG"><br><br>
+        <input type="radio" name="que6" value="1"> Programming on c<br>
+        <input type="radio" name="que6" value="2"> NPTEL 0<br>
+        <input type="radio" name="que6" value="3"> NPTEL 3<br>
+        <input type="radio" name="que6" value="4">  Compilation error<br>
+
+        <h3>Question 7</h3>
+        <img src="p4.PNG"><br><br>
+        <input type="radio" name="que7" value="1"> true<br>
+        <input type="radio" name="que7" value="2"> false<br>
+        <input type="radio" name="que7" value="3"> Compiler dependent<br>
+        <input type="radio" name="que7" value="4"> Compiler error<br>
+
+        <h3>Question 8</h3>
+        <img src="p5.PNG"><br><br>
+        <input type="radio" name="que8" value="1"> 0<br>
+        <input type="radio" name="que8" value="2"> 1<br>
+        <input type="radio" name="que8" value="3"> 10<br>
+        <input type="radio" name="que8" value="4"> 30<br>
+
+        <h3>Question 9</h3>
+        <img src="p6.PNG"><br><br>
+        <input type="radio" name="que9" value="1"> TRUE<br>
+        <input type="radio" name="que9" value="2"> FALSE<br>
+        <input type="radio" name="que9" value="3"> Syntax error<br>
+        <input type="radio" name="que9" value="4"> Compilation error<br>
+
+        <h3>Question 10</h3>
+        <img src="p7.PNG"><br><br>
+        <input type="radio" name="que10" value="1"> 10<br>
+        <input type="radio" name="que10" value="2"> 11<br>
+        <input type="radio" name="que10" value="3"> 20<br>
+        <input type="radio" name="que10" value="4"> Compilation error<br><br>
+        <input type="submit" class="btn-info" >
+        </form>
+    </body>
+</html>

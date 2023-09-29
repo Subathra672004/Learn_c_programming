@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<style>
+body{
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+*{box-sizing: border-box}
+input[type=text], input[type=password] {
+width: 50%;
+font-size: 14px;
+padding: 7px;
+margin: 5px 0 22px 0;
+display: inline-block;
+border: 1px solid whitesmoke;
+background:transparent;
+}
+label{
+font-size: 15px;
+}
+input[type=text]:focus, input[type=password]:focus {
+background-color: #ddd;
+outline: none;
+}
+hr {
+border: 1px solid #f1f1f1;
+margin-bottom: 25px;
+}
+button {
+font-size: 10px;
+font-weight: bold;
+background-color: rgb(10, 119, 13);
+color: white;
+padding: 6px;
+margin: 8px 0;
+border: none;
+cursor: pointer;
+width: 25%;
+opacity: 0.9;
+}
+button:hover {
+opacity:1;
+}
+.cancel {
+padding: 5px 5px;
+background-color: #ff3d2f;
+}
+.formContainer {
+padding: 50px 500px 50px 500px;
+}
+.formContainer p{
+font-size: 15px;
+}
+form{
+    margin:0px;
+    padding:0px;
+    border:2px solid black;
+    background:transparent;
+    backdrop-filter: blur(55px);
+    position: relative;
+    display:flex;
+}
+input[type=text],input[type=password]{
+    border-radius: 25px;
+}
+::placeholder{
+    color:blanchedalmond;
+}
+</style>
+</head>
+<body background="signupimg.jpg">
+    <script>
+        function validate()
+        {
+            var x=document.forms.myform.email.value;
+            var y=document.forms.myform.password.value;
+            var z=document.forms.myform.repeatPassword.value;
+            mail=x.split('@')
+            if(mail[0].length<8)
+            {
+                alert("Atleast 8 characters are required for email");
+                return false
+            }
+            else if(y.length<8)
+            {
+                alert("Password requires atleast 8 characters")
+                return false
+            }
+            else if(y!=z)
+            {
+                alert("Recheck your password");
+                return false
+            }
+            else
+            {
+                return true
+            }            
+        }
+    </script>
+<form name="myform" onsubmit="return validate();" action="project video page1.html">
+<div class="formContainer">
+<h1 style="color:brown">Sign Up Form</h1>
+<hr>
+<label for="email"><b>Email</b></label><br>
+<input type="text" placeholder="Enter Email" name="email" required><br>
+<label for="password"><b>Password</b></label><br>
+<input type="password" placeholder="Enter Password" name="password" required><br>
+<label for="repeatPassword"><b>Repeat Password</b></label><br>
+<input type="password" placeholder="Repeat Password" name="repeatPassword"
+required><br>
+<label>
+<input type="checkbox" checked="checked" name="remember" style="marginbottom:
+15px"> Remember me
+</label>
+<p style="color:white">By creating an account you agree to our <a href="#"
+style="color:dodgerblue">Terms & Privacy</a>.</p>
+<div>
+    <input type="submit" class="btn-success">
+    <button type="cbutton" class="btn-danger">Cancel</button>
+</div>
+</div>
+</form>
+</body>
+</html>

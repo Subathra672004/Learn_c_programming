@@ -1,0 +1,132 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <style>
+            body
+                {
+                    margin:50px;
+                    padding:10px;
+                }
+                h3{
+                    color:blue;
+                }
+            </style>
+    </head>
+    <body>
+        <h1 style="color:brown; text-align:center;">Assignment 8</h1>
+        <h4 style="color:rgb(13, 216, 13); text-align:right">Each question carries 1 point</h4>
+        <script>
+function validate()
+            {
+                var q1=document.forms.myform.que1.value;
+                var q2=document.forms.myform.que2.value;
+                var q3=document.forms.myform.que3.value;
+                var q4=document.forms.myform.que4.value;
+                var q5=document.forms.myform.que5.value;
+                var q6=document.forms.myform.que6.value;
+                var q7=document.forms.myform.que7.value;
+                var q8=document.forms.myform.que8.value;
+                var q9=document.forms.myform.que9.value;
+                var q10=document.forms.myform.que10.value;
+                var sum=0
+                if(q1==3)
+                    sum+=1;
+                if(q2==2)
+                    sum+=1;
+                if(q3==3)
+                    sum+=1;
+                if(q4==1)
+                    sum+=1;
+                if(q5==2)
+                    sum+=1;
+                if(q6==6)
+                    sum+=1;
+                if(q7==4)
+                    sum+=1;
+                if(q8==1)
+                    sum+=1;
+                if(q9==2)
+                    sum+=1;
+                if(q10=="27.08")
+                    sum+=1;
+                    if(sum<7)
+                {
+                    alert("You scored "+sum+"/10");
+                    alert("Retake your assignment");
+                    return false;
+                }   
+                else{
+                    alert("You scored "+sum+"/10");
+                    alert("Thanks for taking assignment 2");
+                }
+            }
+        </script>
+        <form name="myform" onsubmit="return validate();" action="project video page1.html" method="post">
+        <h3>Question 1</h3>
+        A function prototype is used for<br><br>
+        <input type="radio" name="que1" value="1"> Declaring the function logic<br>
+        <input type="radio" name="que1" value="2"> Calling the function from the main body<br>
+        <input type="radio" name="que1" value="3"> Telling the compiler, the kind of arguments used in the function<br>
+        <input type="radio" name="que1" value="4"> Telling the user for proper use of syntax while calling the function<br><br>
+        
+        <h3>Question 2</h3>
+        What is the default return type if it is not specified in function definition?<br><br>
+        <input type="radio" name="que2" value="1">  void<br>
+        <input type="radio" name="que2" value="2">   integer<br>
+        <input type="radio" name="que2" value="3"> double<br>
+        <input type="radio" name="que2" value="4">  float<br>
+
+        <h3>Question 3</h3>
+        <img src="p32.PNG"><br><br>
+        <input type="radio" name="que3" value="1"> 70<br>
+        <input type="radio" name="que3" value="2">  Garbage value<br>
+        <input type="radio" name="que3" value="3"> Compilation error<br>
+        <input type="radio" name="que3" value="4">  None<br>
+
+        <h3>Question 4</h3>
+        <img src="p33.PNG"><br><br>
+        <input type="radio" name="que4" value="1">   Infinite times<br>
+        <input type="radio" name="que4" value="2">  32767<br>
+        <input type="radio" name="que4" value="3"> 65535<br>
+        <input type="radio" name="que4" value="4"> Till stack overflows<br>
+
+        <h3>Question 5</h3>
+        <img src="p34.PNG"><br><br>
+        <input type="radio" name="que5" value="1"> Only once<br>
+        <input type="radio" name="que5" value="2">   Zero times<br>
+        <input type="radio" name="que5" value="3"> Infinite times<br>
+        <input type="radio" name="que5" value="4">   Compilation error<br>
+
+        <h3>Question 6</h3>
+        <img src="E:\project\p35.PNG"><br><br>
+        <input type="text" name="que6"> <br>
+        
+
+        <h3>Question 7</h3>
+        <img src="p36.PNG"><br><br>
+        <input type="radio" name="que7" value="1"> 8 ,4, 0, 2, 14<br>
+        <input type="radio" name="que7" value="2"> 8, 4, 0, 2, 0<br>
+        <input type="radio" name="que7" value="3">  2, 0, 4, 8, 14<br>
+        <input type="radio" name="que7" value="4"> 2, 0, 4, 8, 0<br>
+
+        <h3>Question 8</h3>
+        <img src="p37.PNG"><br><br>
+        <input type="radio" name="que8" value="1"> 55<br>
+        <input type="radio" name="que8" value="2"> 45<br>
+        <input type="radio" name="que8" value="3"> 66<br>
+        <input type="radio" name="que8" value="4"> 10<br>
+
+        <h3>Question 9</h3>
+        <img src="p38.PNG"><br><br>
+        <input type="radio" name="que9" value="1">  Maximum of a, b<br>
+        <input type="radio" name="que9" value="2"> Positive difference between a and b<br>
+        <input type="radio" name="que9" value="3">  Sum of a and b<br>
+        <input type="radio" name="que9" value="4"> Minimum of a and b<br>
+
+        <h3>Question 10</h3>
+        <img src="p39.PNG"><br><br>
+        <input type="text" name="que10">  <br><br>
+        <input type="submit" class="btn-info">
+        </form>
+    </body>
+</html>
